@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+
+* {
+  font-family: "Ubuntu";
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.noMoney {
+  opacity: 0.7;
+  border: 1px solid red;
+}
+
+::-webkit-scrollbar {
+  border-radius: 2vh;
+
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #313131;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(29, 29, 29);
+  border-radius: 2vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#app {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(19, 19, 19, 0.329);
+
+  .basket {
+  }
+}
+
+@keyframes transitionIn {
+  0% {
+    opacity: 0.2;
+    transform: scale(0);
+  }
+
+  50%,
+  70%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.transitionIn {
+  animation: transitionIn 1s both;
+}
+
+.header {
+  position: absolute;
+  left: 5px;
+
+  margin: 10px;
+
+  a {
+    margin: 5px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 60vw;
+  height: 70vh;
+
+  border-radius: 0.5vh;
+
+  overflow: auto;
+
+  background: #111111e7;
+  padding: 1rem;
+
+  .categories {
+    display: flex;
+    flex-flow: row wrap;
+
+    color: white;
+
+    border-radius: 1vh;
+
+    padding: 1rem;
+
+    margin-top: 5%;
+
+    .label {
+      position: absolute;
+      top: 0;
+      left: 26%;
+      font-size: 2em;
+    }
+
+    .current {
+      font-weight: 800;
+    }
+
+    ul {
+      display: flex;
+      flex-flow: column;
+      height: auto;
+      width: 10%;
+
+      list-style: none;
+
+      .tab {
+        padding: 1rem;
+        width: 220px;
+
+        border-radius: 5px;
+
+        background: #111111da;
+        text-align: left;
+
+        font-size: 1em;
+
+        margin: 5px;
+
+        transition: 0.3s;
+      }
+    }
+  }
+
+  .products {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    padding: 1rem;
+
+    margin-top: 5%;
+
+    width: 100%;
+    height: 70%;
+
+    .product {
+      user-select: none;
+      color: white;
+
+      margin: 5px;
+
+      width: 190px;
+      height: 270px;
+
+      background: #141414;
+
+      border-radius: 1vh;
+      border: 2px solid rgb(19, 19, 19);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 10px;
+      float: left;
+
+      flex-flow: column;
+
+      overflow: hidden !important;
+
+      position: relative;
+
+      .image {
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0%;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transform: translateY(-10%);
+
+        img {
+          width: 43%;
+          transition: 0.3s;
+          position: absolute;
+          height: auto;
+          margin-bottom: 10px;
+        }
+      }
+      .info {
+        position: absolute;
+        bottom: 14%;
+        text-align: center;
+        font-size: 13px;
+        transition: 0.3s;
+
+        margin: auto;
+        padding-bottom: 10px;
+
+        z-index: 2;
+
+        p:nth-child(1) {
+          text-transform: capitalize;
+        }
+      }
+      .buy {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        position: absolute;
+        bottom: 0%;
+
+        padding: 1rem;
+
+        .qty {
+          color: white;
+          appearance: none;
+          text-align: center;
+
+          width: 20%;
+
+          border-bottom: none;
+          position: absolute;
+        }
+
+        a {
+          font-size: 12px;
+        }
+      }
+      transition: 0.3s;
+
+      // .buy {
+      //   width: 100%;
+      //   button {
+      //     color: white;
+
+      //     background: rgb(0, 255, 0);
+
+      //     font-size: 12px;
+      //     margin-bottom: 5px;
+
+      //     border-radius: 1vh;
+
+      //     padding: 0.5rem;
+      //     width: 100%;
+
+      //     border: none;
+      //   }
+      // }
+    }
+  }
+}
+
+.active {
+  width: 200px;
+  border: 2px solid white;
+}
+
+@keyframes ModalOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.blur {
+  filter: blur(3px);
+}
+
+.price {
+  color: rgb(0, 255, 0);
+}

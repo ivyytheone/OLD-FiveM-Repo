@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>eyrp_banks</title>   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        <link href="./css/app.css" rel="stylesheet" />   
+
+        <!--Material desing-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    </head>  
+    <body> 
+        <div class="container">
+            <div id="wrapper">
+                <div class="startSide">
+                    <img class="main_logo" src="https://i.imgur.com/lw8JuSr.png"> 
+                    <div class="swedbank-balance">
+                        <div class="swedbank-balance-title">Banksaldo</div>
+                        <div class="swedbank-balance-amount"><span id="PlayerBank"></span> KR</div>
+                    </div>
+                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="withdraw();" style="position: absolute; left: 80%; top: 4.8%;">
+                        Ta ut
+                    </button>
+                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="deposit();" style="position: absolute; left: 86%; top: 4.8%;">
+                        Sätt in
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="withdraw-container">
+            <div class="withdrawPage"> 
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="back('.withdraw-container');" style="position: absolute; top: 4.8%;">
+                    Tillbaka
+                </button>
+                <div class="withdrawPage-title">Hur mycket vill du ta ut?</div> 
+                <input class="withdraw-input" id="withdraw-amount" placeholder="Ange belopp"> 
+                <button id="withdraw-button">Ta ut</button>
+            </div>
+        </div>
+        <div class="deposit-container">
+            <div class="depositPage"> 
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="back('.deposit-container');" style="position: absolute; top: 4.8%;">
+                    Tillbaka
+                </button>
+                <div class="depositPage-title">Hur mycket vill du sätta in?</div> 
+                <input class="deposit-input" id="withdraw-amount" placeholder="Ange belopp"> 
+                <button id="deposit-button">Sätt in</button>
+            </div>
+        </div>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="./js/app.js"></script>
+    </body>
+</html>

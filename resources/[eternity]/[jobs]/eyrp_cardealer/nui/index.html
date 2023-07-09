@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+    <script src="https://kit.fontawesome.com/d53809054b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="./css/app.css" rel="stylesheet" />
+    <script src="./js/jquery/jquery.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/funcs.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cardealer">
+            <div class="top-bar">
+                <header>Bilfirman</header>
+            </div>
+            <div class="top-bar-list">
+                <ul>
+                    <li><a data-page="vehicles" class="active" class="" href="#">Fordon</a></li>
+                    <li><a data-page="orders" href="#">Beställningar</a></li>
+                    <li><a data-page="stock" href="#">Lager</a></li>
+                </ul>
+            </div>
+            <div class="pages">
+                <div id="vehicles" class="page active">
+                    <div class="vtype-category-grid">
+                        <div category-option="sports" class="vtype-category-option">
+                            <header>Sportbilar</header>
+                            <img src="./assets/img/category/sportscar.png">
+                        </div>
+                        <div category-option="bikes" class="vtype-category-option">
+                            <header>Motorcyklar</header>
+                            <img src="./assets/img/category/bike.png">
+                        </div>
+                        <div category-option="commercial" class="vtype-category-option">
+                            <header>Kommersiella</header>
+                            <img src="./assets/img/category/truck.png">
+                        </div>
+                        <div category-option="government" class="vtype-category-option">
+                            <header>Tjänstefordon</header>
+                            <img src="./assets/img/category/sedan.png">
+                        </div>
+                        <div category-option="sedans" class="vtype-category-option">
+                            <header>Sedaner</header>
+                            <img src="./assets/img/category/sedan.png">
+                        </div>
+                        <div category-option="compacts" class="vtype-category-option">
+                            <header>Kompakter</header>
+                            <img src="./assets/img/category/compact.png">
+                        </div>
+                        <div category-option="suv" class="vtype-category-option">
+                            <header>SUV</header>
+                            <img src="./assets/img/category/suv.png">
+                        </div>
+                        <div category-option="boats" class="vtype-category-option">
+                            <header>Båtar</header>
+                            <img src="./assets/img/category/boat.png">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="orders" class="page">
+
+                    <!--  <div class="order">
+                        <div class="order-section">
+                            <header>Pris</header>
+                            <h1>380 000kr</h1>
+                        </div>
+                        <div class="order-section">
+                            <header>Pris</header>
+                            <h1>380 000kr</h1>
+                        </div>
+                        <div class="order-section">
+                            <header>Pris</header>
+                            <h1>380 000kr</h1>
+                        </div>
+                        <button>Avbryt beställning</button>
+                    </div> -->
+                </div>
+
+
+                <div id="vehicle-category-list" class="page">
+                    <input onkeyup="FilterVehicleModels()" type="text" id="vehicle-model-search"
+                        placeholder="Sök efter fordonsmodell">
+                    <div id="list-of-vehicles" class="list-of-vehicles">
+
+                    </div>
+                </div>
+
+                <div class="page" id="vehicle-buyer-info">
+                    <div class="right-section">
+                        <img id="vehicle-image" src="">
+                        <header></header>
+                        <p></p>
+                    </div>
+                    <div class="left-section">
+                        <div class="left-section-content">
+                            <header>
+                                Prisdetaljer
+                            </header>
+                            <div class="price-details">
+                                Inköpspris: <span id="vehicle-price" class="info-answ"></span> <br>
+                                Försäljningspris: <span id="vehicle-selling-price" class="info-answ">sheesh</span> <br>
+                            </div>
+                            <button id="order-vehicle">Beställ fordon</button>
+                            <div class="verify-contract">
+                                <span>Verifiera köpet</span>
+                                <button class="mdl-button mdl-js-button" id="cancel-contract">Avbryt</button>
+                                <button class="mdl-button mdl-js-button" id="verify-contract">Verifiera
+                                    & köp</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Observera att genom en beställning av detta fordon avsäger du rätten att återlämna
+                        fordonet vid
+                        eventuell affär</p>
+                </div>
+
+                <div id="stock" class="page">
+                    <div class="stocked-vehicles">
+                        <!-- <div class="stock">
+                            <div class="stock-section">
+                                <header>Modell</header>
+                                <h1>Blista</h1>
+                            </div>
+                            <div class="stock-section">
+                                <header>Inköpspris</header>
+                                <h1>380 000kr</h1>
+                            </div>
+                            <div class="stock-section">
+                                <header>Regnummer</header>
+                                <h1>HVD89L</h1>
+                            </div>
+                            <button>Avbryt beställning</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

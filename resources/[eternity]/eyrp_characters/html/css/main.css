@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+html {
+    overflow: hidden;
+}
+
+p {
+    margin: 0 !important;
+}
+
+
+.numbers h1{
+    position: absolute;
+    color: hsla(0, 0%, 100%, .05);
+    font-size: 10em;
+    margin: auto;
+    left: 23%;
+    top: 47%;
+    z-index: 4;
+    transition: 500ms;
+    cursor: default;
+}
+
+/* .numbers h1:hover {
+    top: 465px;
+    transition: 500ms;
+}
+
+.numbers2 h1:hover {
+    top: 465px;
+    transition: 500ms;
+}
+
+.numbers3 h1:hover {
+    top: 465px;
+    transition: 500ms;
+} */
+
+
+.numbers2 h1 {
+    position: absolute;
+    color: hsla(0, 0%, 100%, .05);
+    font-size: 10em;
+    margin: auto;
+    left: 48%;
+    top: 47%;
+    z-index: 4;
+    transition: 500ms;
+    cursor: default;
+}
+
+.numbers3 h1 {
+    position: absolute;
+    color: hsla(0, 0%, 100%, .05);
+    font-size: 10em;
+    margin: auto;
+    left: 76%;
+    top: 47%;
+    z-index: 4;
+    transition: 500ms;
+    cursor: default;
+}
+
+
+
+._overcast_ {
+    z-index: -2;
+
+    margin-left: -288px;
+    margin-top: -800px;
+
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+}
+
+
+.character_undercast {
+    position: absolute;
+    background-color: rgb(15, 15, 15); 
+    z-index: -1;
+    top: 57%;
+    left: 64.8%;
+    transform: translate(-50%, -50%);
+    width: 10000px;
+    height: 10000px;  
+    cursor: not-allowed;
+}
+
+
+img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: -20%;
+    left: 50.5%;
+    transform: translate(-50%, -50%);
+}
+
+
+.main-container {
+    display: none;
+    cursor: default;
+    width: 70vw;
+    margin: auto;
+    position: relative;
+    top: 35vh; 
+}
+
+.logga {
+    position: absolute;
+    width: 386px;
+    height: 478px;
+    left: 51.3%;
+    top: 12%;
+    transform: translate(-50%, -110%)
+}
+
+.character-container {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    margin-left: 260px;
+}
+
+/* .hr_top {
+    border-top: 2px solid white;
+} */
+
+.over_characters {
+    margin: 10px;
+    z-index: 99999;
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+.character-box {
+    background: transparent;
+    text-align: center;
+    
+    width: 370px;
+    height: 100%;
+
+    margin: -200px;
+    margin-left: -390px; 
+
+    margin-top: 340px; 
+    transition: all 0.5s ease-in-out;
+
+    cursor: default;
+    border-radius: 3px; 
+
+    border: 1px solid white;
+
+    /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3); */
+}
+
+.text { 
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #000000; 
+    margin-top: -95px;
+}
+
+.character-info {
+    color: rgb(222, 222, 222);
+    text-align: left!important;
+    text-indent: 12px;
+    margin-left: 1px;
+}
+
+.character-info-new {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    text-indent: 12px;
+    margin-left: 5px;
+}
+
+.character-fullname {
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: left;
+    text-indent: 13px;
+    letter-spacing: 3px;
+    color: white;
+    font-weight: bold;
+    padding-left: 9px;
+}
+
+.buttons {
+    margin-top: 180px;
+    margin-left: 190px;
+    z-index: 9999;
+}
+
+.buttons button {
+    padding: 8px;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    margin: 3px;
+}
+
+.buttons #play-char {
+  border: 1px solid white;  
+  color: white;
+  width: 80px;
+  justify-content: center;
+  text-align: center;
+  animation: travel 1s;
+  border-radius: 5px;
+  margin-left: -10px;
+  margin-top: -55px;
+  display: none;
+}
+
+.buttons #play-char:hover {
+    background-color: #ffffff;
+    transition: 0.2s ease-in;
+}
+
+@keyframes travel {
+    from {
+        opacity: 0.01;
+        transform: translateY(130px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+
+.buttons #delete {
+    border: 1px solid #ffffff;  
+    color: white;
+    position: absolute;
+    margin-left: -260px;
+    margin-top: -55px;
+    animation: travel 1s;
+    border-radius: 5px;
+}
+
+.buttons #delete:hover {
+    background-color: #ffffff;
+    transition: 0.2s ease-in;
+}
+
+
+
+.character-buttons {
+    display: none;
+}
+
+.border-buttons {
+    position: relative;
+}
+
+.btn {
+    background: 0;
+    outline: 0;
+    font-weight: bold;
+}
+
+.btn-play {
+    color: rgb(209, 209, 209);
+
+    margin-left: 600px;
+    margin-top: -120px;
+    width: 150px;
+    height: 45px;
+
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(0, 255, 0);
+    border-radius: 0;
+    transition: all 1.5s ease-in;
+
+    animation: buttonClick1 2s;
+}
+
+@keyframes buttonClick1 {
+    from {
+        opacity: 0;
+    }
+
+    to { 
+        opacity: 100;
+    }
+}
+
+.btn-delete {
+    color: rgb(255, 255, 255);
+
+    margin-left: 700px;
+    margin-top: -120px;
+
+    width: 150px;
+    height: 45px;
+
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 32, 32);
+
+    transition: all 1.5s ease-in;
+
+    animation: buttonClick2 2s;
+}
+
+@keyframes buttonClick2 {
+    from {
+        opacity: 0;
+    }
+
+    to { 
+        opacity: 100;
+    }
+}
+
+.btn-play:hover {
+    background-color: rgb(0, 204, 0);
+    color: rgb(0, 116, 0);
+}
+
+.btn-delete:hover {
+    background-color: rgb(175, 0, 0);
+    color: rgb(116, 0, 0);
+}
+
+/* #box1 {
+    animation: box1 2.0s;
+}
+
+#box2 {
+    animation: box1 2.0s;
+}
+
+#box3 {
+    animation: box1 2.0s;
+} */
+
+/* @keyframes box1 {
+    from {
+        opacity: 0;
+    }
+
+    to { 
+        opacity: 100;
+    }
+}
+
+@keyframes box2 {
+    from {
+        opacity: 0;
+    }
+
+    to { 
+        opacity: 100;
+    }
+}
+
+@keyframes box3 {
+    from {
+        opacity: 0;
+    }
+
+    to { 
+        opacity: 100;
+    }
+} */
+
+
+/* Hej*/ 
+
+.charcreate {
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: 	rgb(15, 15, 15); 
+}
+
+.charcreate .bg {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(16, 16, 16); 
+    border: 1px solid white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+}
+
+.charcreate #back {
+    color: 	#ffffff;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    width: 95px;
+    height: 45px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+}
+
+.charcreate .bg span {
+    color: white;
+    font-size: 21px;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+}
+
+.charcreate .bg  #createbutton {
+    border: none;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: white;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transition: 300ms;
+    border-radius: 3px;
+    transform: translate(-50%, -50%)
+}
+
+.charcreate .bg  #createbutton:hover {
+    background-color: #ffffff;
+    transition: 300ms;
+}
+
+.charcreate .bg hr {
+    background: rgba(255, 255, 255, 0.726);
+    border: 0.5px solid rgba(255, 255, 255, 0.726);
+    width: 45%;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+
+    transform: translate(-50%, -50%)
+}
+
+.charcreate #back:hover {
+    background-color: #ffffff;
+    transition: 300ms;
+}
+
+.charcreate-inputs #firstname {
+    position: absolute;
+
+    top: 22%; left: 50%; 
+    transform: translate(-50%, -50%);
+
+    color: white;
+
+    background: rgb(18, 18, 18);  
+    border: none;
+    border-left: 1px solid white; 
+
+    padding: 2%;
+
+    outline: none;
+}
+
+.charcreate-inputs #lastname {
+    position: absolute;
+
+    top: 32%; left: 50%; 
+    transform: translate(-50%, -50%);
+
+    color: white;
+
+    background: rgb(18, 18, 18);  
+    border: none;
+    border-left: 1px solid white; 
+
+    padding: 2%;
+
+    outline: none;
+}
+
+.charcreate-inputs #dob {
+    position: absolute;
+
+    top: 42%; left: 50%; 
+    transform: translate(-50%, -50%);
+
+    color: white;
+
+    background: rgb(18, 18, 18);  
+    border: none;
+    border-left: 1px solid white; 
+
+    padding: 2%;
+
+    outline: none;
+}
+
+.charcreate-inputs #height {
+    position: absolute;
+
+    top: 52%; left: 50%; 
+    transform: translate(-50%, -50%);
+
+    color: white;
+
+    background: rgb(18, 18, 18);  
+    border: none;
+    border-left: 1px solid white; 
+
+    padding: 2%;
+
+    outline: none;
+}
+
+.charcreate-inputs #sex {
+    position: absolute;
+
+    top: 62%; left: 50%; 
+    transform: translate(-50%, -50%);
+
+    color: white;
+
+    background: rgb(18, 18, 18);  
+    border: none;
+    border-left: 1px solid white; 
+
+    padding: 2%;
+
+    outline: none;
+}
+
+/* .choose  */
+
+.choose-location {
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(15, 15, 15); 
+}
+
+.choose-location #back {
+    color: 	#ffffff;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    width: 95px;
+    height: 45px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.choose-location #back:hover {
+    transition: 1s;
+    background: #ffffff; 
+}
+
+.choose-location .locations {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.choose-location .locations .header {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.choose-location .locations hr {
+    background: rgb(28, 28, 28);
+    border: 0.87px solid rgb(28, 28, 28);
+    width: 140%;
+    position: absolute;
+    top: 6.5%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+.choose-location .locations button {    
+    color: 	#ffffff;
+    background: rgb(20, 20, 20); 
+    outline: none;
+    margin-top: 10px;
+    font-size: 28px;
+    width: 580px;
+    height: 70px;
+    display: block;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s ease-in;
+}
+
+.choose-location .locations button:hover {
+    border: 2px solid #ffffff; 
+    letter-spacing: 2px;
+}
+
+
+.bg-confirm {
+    position: absolute;
+    width: 550px;
+    height: 150px;
+    background-color: 	#201f20;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+}
+
+.bg-confirm .fonter {
+    color: white;
+    font-size: 25px;
+}
+
+.bg-confirm .lowkey {
+    color: rgb(206, 202, 202);
+    background-color: 	#1c1a1c;
+    height: 50px;
+}
+
+.bg-confirm #close {
+    border: none;
+    color: white;
+    background-color: #00879a;
+    height: 30%;
+    cursor: pointer;
+}
+
+.bg-confirm #close:hover {
+    color: rgb(153, 149, 149);
+}

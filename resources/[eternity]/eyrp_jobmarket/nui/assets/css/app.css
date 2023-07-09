@@ -1,0 +1,91 @@
+* {
+    font-family: 'Roboto';
+}
+
+
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60vh;
+    width: 100vh;
+    background-color: #2D303C;
+    overflow-y: scroll;
+}
+
+.wrapper .topbar {
+    position: relative;
+    height: 7vh;
+    background-color: #272934;
+}
+
+.wrapper .topbar span {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    top: 23px;
+    left: 20px;
+}
+
+.wrapper .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.wrapper .products .product {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 200px;
+    width: 200px;
+    background: #272934;
+}
+
+
+.wrapper .products .product button {
+    outline: none;
+    width: 100px;
+    height: 35px;
+    border: none;
+    position: relative;
+    padding: 10px;
+    top: 27px;
+    left: 51px;
+    border-radius: 3px;
+    background: #428CCC;
+    color: #D7D8DA;
+}
+
+.wrapper .products .product img {
+    height: 100px;
+    margin-left: 50px;
+}
+
+.wrapper .products .product span {
+    color: #D7D8DA;
+    position: relative; 
+    left: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+  
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+  
+
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}

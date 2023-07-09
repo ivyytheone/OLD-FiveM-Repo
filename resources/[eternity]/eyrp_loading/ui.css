@@ -1,0 +1,67 @@
+body { 
+    font-family: 'Cabin', sans-serif;
+    background: #c5c5c5;
+    color: white;
+} 
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+.text {
+    font-size: 45px; 
+    margin-left: 40%; 
+    margin-top: 25%; 
+    color: #3e3e3e
+} 
+
+.eyrp_logo {
+    position: relative;
+    position: absolute;  
+    width: 260px;  
+    height: 240px;   
+    top: 30%;
+    left: 50.2%; 
+    transform: translate(-50%, -50%);
+}
+ 
+.loadbar {
+    z-index: 99999999999999999;
+
+    width: 30%;
+    background-color: #3e3e3e;
+    height: 17px; 
+    border-radius: 10px;
+
+    margin: 0 auto;
+    position: absolute;
+
+    margin-top: 46px;
+    margin-bottom: 550px;
+    right: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    position: relative;
+
+    display: block;
+
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.368);
+}
+
+.thingy {
+    width: 17%;
+    background-color: rgb(255, 255, 255);
+    height: 17px; 
+    border-radius: 10px; 
+    transition: 0.5s;
+
+    position: absolute;
+    left: 10%;
+    -webkit-box-shadow: inset 200px 200px 300px 200px rgba(124, 124, 124, 0.082);
+    -moz-box-shadow: inset 200px 200px 300px 200px rgba(124, 124, 124, 0.082);
+    box-shadow: inset 200px 200px 300px 200px rgba(124, 124, 124, 0.082);
+}
+

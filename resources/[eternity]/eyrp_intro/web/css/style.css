@@ -1,0 +1,59 @@
+.background {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    border: none;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+
+}
+* {
+    font-family: 'Roboto';
+}
+
+.topbar {
+    display: none;
+}
+
+.topbar {
+    height: 15vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(66, 66, 66, 0.377);
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+}
+
+.topbar span {
+    position: relative;
+    top: 40px;
+    
+}
+
+.topbar img {
+    height: 8vh;
+    position: absolute;
+    top: 29px;
+    left: 55vh;
+}
+
+
+::-webkit-scrollbar {
+width: 0px;
+}
+  
+::-webkit-scrollbar-track {
+background: transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: transparent;
+}

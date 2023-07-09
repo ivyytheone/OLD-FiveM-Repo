@@ -1,0 +1,73 @@
+.inventory-bg .inventory .inventory-tabs {
+    width: 73.9%;
+    height: 40px;
+    
+    margin: 0 auto;
+    margin-top: 30px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: start;
+
+    overflow: hidden
+}
+
+.inventory-bg .inventory .inventory-tabs .tab {
+    width: 122px;
+    height: 100%;
+
+    background: rgba(37, 35, 37, 0.85);
+    border: 0.07em solid rgb(45, 47, 59);
+    border-radius: 5px;
+
+    margin-left: 1.65px;
+}
+
+.inventory-bg .inventory .inventory-tabs .tab p[label] {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+
+    margin-top: 7px;
+}
+
+.inventory-bg .inventory .inventory-tabs .tab p[label] span {
+    font-size: 18px;
+
+    position: relative;
+    top: 4px;
+}
+
+.inventory-bg .inventory .inventory-tabs .tab.active {
+    border: 0.05em solid #ffffff;
+}
+
+.inventory-bg .inventory ul.dropdown-content {
+    background: rgba(37, 35, 37, 0.85);
+    border: 0.07em solid rgb(45, 47, 59);
+    overflow: hidden;
+
+    min-width: 150px;
+}
+
+.inventory-bg .inventory ul.dropdown-content li:not(:last-child) {
+    border: 0.07em solid rgb(45, 47, 59);
+}
+
+.inventory-bg .inventory ul.dropdown-content li:hover {
+    background: rgb(41, 43, 56);
+}
+
+.inventory-bg .inventory ul.dropdown-content li a {
+    color: #eee;
+    font-size: 16px;
+    text-align: center;
+}
+
+.inventory-bg .inventory ul.dropdown-content li a span {
+    font-size: 18px;
+
+    position: relative;
+    top: 3.5px;
+}

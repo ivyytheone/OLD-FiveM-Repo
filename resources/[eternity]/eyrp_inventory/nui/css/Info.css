@@ -1,0 +1,49 @@
+.inventory-bg .inventory-info {
+    width: 20%;
+    min-height: 40%;
+
+    background: rgba(37, 35, 35, 0.85);
+    border: 1.2px solid #2D303C;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.inventory-bg .inventory-info p[label] {
+    text-align: center;
+    font-size: 25px;
+    color: #eee;
+}
+
+.inventory-bg .inventory-info p[desc] {
+    color: rgb(216, 216, 216);
+    
+    padding-left: 22px;
+    width: 95%;
+}
+
+.inventory-bg .inventory-info img {
+    width: 130px;
+    height: 130px;
+
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.inventory-bg .inventory-info .buttons {
+    width: 100%;
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    align-content: center
+}
+
+.inventory-bg .inventory-info .buttons > * {
+    margin-left: 15px;
+    box-shadow: none;
+}

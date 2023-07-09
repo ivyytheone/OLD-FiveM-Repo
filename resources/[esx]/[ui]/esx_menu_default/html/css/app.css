@@ -1,0 +1,105 @@
+.menu {
+    font-family: 'Kanit', sans-serif;
+    width: 350px;
+    color: #fff;
+    position: absolute;
+    border-radius: 0px; 
+    background: hsla(223, 23%, 12%, 0.944);
+}
+
+.menu .head { 
+    background: hsl(225, 23%, 10%);
+    color: white;
+    font-size: 23px;
+    text-align: left;
+    padding-left: 8.5px;
+    height: 45px;
+    line-height: 50px;
+}
+
+.menu .menu-items {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.menu .menu-items .menu-item {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: rgba(238, 238, 238, 0.727);
+    text-indent: 10px; 
+    font-size: 15px;
+}
+
+.menu .menu-items .menu-item.selected { 
+    color: white;
+    background: hsl(224, 22%, 10%);
+    border-left: 2px solid white;
+}
+
+.menu .menu-items .menu-item .slider {
+    margin-right: 6px;
+    float: right
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #00000000; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00000000;
+}
+
+.menu.align-left {
+    left: 40;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.menu.align-top-left {
+    left: 40;
+    top: 40;
+}
+
+.menu.align-top {
+    left: 50%;
+    top: 40;
+    transform: translate(-50%, 0);
+}
+
+.menu.align-top-right {
+    right: 10;
+    top: 40;
+}
+
+.menu.align-right {
+    right: 40;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.menu.align-bottom-right {
+    right: 40;
+    bottom: 40;
+}
+
+.menu.align-bottom {
+    left: 50%;
+    bottom: 40;
+    transform: translate(-50%, 0);
+}
+
+.menu.align-bottom-left {
+    left: 40;
+    bottom: 40;
+}
+
+.menu.align-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

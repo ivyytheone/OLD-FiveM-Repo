@@ -1,0 +1,291 @@
+<html>
+
+<head>
+  
+  <meta charset="utf-8"/>
+  
+  <link rel="stylesheet" href="css/app.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" />
+
+</head>
+
+<body>
+	
+	<div id="phone" class="animated slideInUp">
+		<div class="status-bar">
+			<div class="time"><span class="hour">0</span>:<span class="minute">00</span></div>
+			<div class="status"></div>
+		</div>
+		<div id="screen">
+
+			<div id="app-home" class="app">
+
+				<div class="app-inner">
+
+					<div class="menu-icon" data-app="contacts">
+						<div class="menu-icon-inner">
+							<img class="menu-icon-inner" src="https://cdn.discordapp.com/attachments/564475496419557386/647609482842472458/phone.png"></i>
+						</div>
+						<div class="menu-icon-label">Telefon</div>
+					</div>
+
+					<div class="menu-icon" data-app="messages">
+						<div class="menu-icon-inner">
+							<img class="menu-icon-inner" src="https://cdn.discordapp.com/attachments/564475496419557386/647617341361750016/sms.png"></i>
+						</div>
+						<div class="menu-icon-label">SMS</div>
+						<div class="counter">5</div>
+					</div>
+
+					<div class="menu-icon" data-app="contact-action-message" data-args="{&quot;name&quot;: &quot;police&quot;, &quot;number&quot;: &quot;police&quot;}">
+						<div class="menu-icon-inner">
+							<img class="menu-icon-inner" src="https://cdn.discordapp.com/attachments/564475496419557386/647617338895499264/polis.png"/></i>
+						</div>
+						<div class="menu-icon-label">Polisen</div>
+					</div>
+					
+					<div class="menu-icon" data-app="contact-action-message" data-args="{&quot;name&quot;: &quot;Ambulance&quot;, &quot;number&quot;: &quot;ambulance&quot;}">
+						<div class="menu-icon-inner">
+							<img class="menu-icon-inner" src="https://cdn.discordapp.com/attachments/564475496419557386/647617340355248129/region.png"></i>
+						</div>
+						<div class="menu-icon-label">Region</div>
+					</div>
+					
+					<div class="menu-icon menu-icon-bank" data-app="bank">
+						<div class="menu-icon-inner">
+							<img class="menu-icon-inner" src="https://cdn.discordapp.com/attachments/564475496419557386/647617342385422341/swish.png"></i>
+						</div>
+						<div class="menu-icon-label">Swish</div>
+					</div>
+					
+					<div class="menu-icon" data-app="contact-action-message" data-args="{&quot;name&quot;: &quot;autoexperten&quot;, &quot;number&quot;: &quot;autoexperten&quot;}">
+						<div class="menu-icon-inner">
+							<img class="menu-icon-inner" src="https://cdn.discordapp.com/attachments/564475496419557386/647617335087333417/autoexperten.png">
+						</div>
+						<div class="menu-icon-label">Autoexperten</div>
+					</div>
+
+					<div class="menu-icon" data-app="contact-action-message" data-args="{&quot;name&quot;: &quot;vianor&quot;, &quot;number&quot;: &quot;vianor&quot;}">
+						<div class="menu-icon-inner">
+							<img class="menu-icon-inner" src="https://cdn.discordapp.com/attachments/564475496419557386/647617738646224906/vianor.png">
+						</div>
+						<div class="menu-icon-label">Vianor</div>
+					</div>
+
+					<div class="menu-icon" data-app="contact-action-message" data-args="{&quot;name&quot;: &quot;cardealer&quot;, &quot;number&quot;: &quot;cardealer&quot;}">
+						<div class="menu-icon-inner">
+							<img class="menu-icon-inner" src="https://cdn.discordapp.com/attachments/564475496419557386/647617336584437804/bilbolag.png">
+						</div>
+						<div class="menu-icon-label">Bilbolag</div>
+					</div>
+
+					<div class="menu-icon" data-app="contact-action-message" data-args="{&quot;name&quot;: &quot;taxi&quot;, &quot;number&quot;: &quot;taxi&quot;}">
+						<div class="menu-icon-inner">
+							<img class="menu-icon-inner" src="https://cdn.discordapp.com/attachments/564475496419557386/647617343349981185/taxi.png">
+						</div>
+						<div class="menu-icon-label">Taxi</div>
+					</div>
+
+					<div class="menu-icon" data-app="twitter">
+						<div class="menu-icon-inner">
+							<img class="menu-icon-inner" src="https://cdn.discordapp.com/attachments/564475496419557386/647617345787002932/twitter.png">
+						</div>
+						<div class="menu-icon-label">Twitter</div>
+						<div class="counter">5</div>
+					</div>
+					
+
+
+					<div class="menu-icon" data-app="contact-action-message" data-args="{&quot;name&quot;: &quot;forsakring&quot;, &quot;number&quot;: &quot;forsakring&quot;}">
+						<div class="menu-icon-inner">
+							<img class="menu-icon-inner" src="https://cdn.discordapp.com/attachments/564475496419557386/647617345270972416/trygghansa.png">
+						</div>
+						<div class="menu-icon-label">Trygghansa</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="app-incoming-call" class="app">
+
+				<div class="app-inner">
+					
+					<div class="contact-infos">
+						<div class="contact-name"></div>
+						<div class="contact-number"></div>
+					</div>
+
+					<div class="contact-actions-wrapper">
+						<div class="contact-action action-accept" data-action="accept">
+							<i class="fa fa-phone fa-fw"></i>
+						</div>
+
+						<div class="contact-action action-deny" data-action="deny">
+							<i class="fa fa-phone fa-fw"></i>
+						</div>
+
+						<div class="contact-action action-add" data-action="add">
+							<i class="fa fa-user-plus"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="app-contacts" class="app">
+
+				<div class="app-inner">
+					
+					<div class="contact-actions">
+						<div class="add-contact">Lägg till kontakt</div>
+					</div>
+
+					<div class="contact-me">
+						<div class="contact"><div class="contact-name">Mitt nummer</div><div class="contact-number"></div></div>
+					</div>
+					
+					<div class="contact-list"></div>
+				</div>
+			</div>
+
+			<div id="app-contact-add" class="app">
+
+				<div class="app-inner">
+					
+					<div class="add-contact-wrapper">
+						<div><input type="text" name="add-contact-name" placeholder="Gustav Hedman"/></div>
+						<div><input type="number" name="add-contact-number" max="99999" placeholder="0708275926"/></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="app-contact-actions" class="app">
+
+				<div class="app-inner">
+					
+					<div class="contact-infos">
+						<div class="contact-name"></div>
+						<div class="contact-number"></div>
+					</div>
+
+					<div class="contact-actions-wrapper">
+						<div class="contact-action action-call" data-action="call">
+							<i class="fa fa-phone fa-fw"></i>
+						</div>
+
+						<div class="contact-action action-message" data-action="message">
+							<i class="fa fa-envelope fa-fw"></i>
+						</div>
+
+						<div class="contact-action action-remove" data-action="remove">
+                        	<i class="fa fa-trash fa-fw"></i>
+						</div>
+
+						<div class="contact-action action-swish" data-action="swish">
+                        	<img style="width: 50px; height: 50px; border-radius: 20px;" src="https://i.imgur.com/EVwHEaA.png">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="app-contact-action-call" class="app">
+
+				<div class="app-inner">
+					
+					<div class="contact-infos">
+						<div class="contact-name"></div>
+						<div class="contact-number"></div>
+					</div>
+
+					<div class="loader">
+						<div class="circle"><i class="fa fa-circle fa-fw"></i></div>
+						<div class="circle"><i class="fa fa-circle fa-fw"></i></div>
+						<div class="circle"><i class="fa fa-circle fa-fw"></i></div>
+						<div class="info">Ringer...</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="app-contact-action-message" class="app">
+
+				<div class="app-inner">
+
+					<div class="message-container"></div>
+
+					<div class="message-input">
+						<textarea spellcheck="false" name="message" placeholder="iMessage"></textarea>
+					</div>
+				</div>
+			</div>
+
+			<div id="app-twitter" class="app">
+
+				<div class="app-inner">
+
+					<div class="message-container"></div>
+
+					<div class="message-input">
+						<textarea spellcheck="false" name="message" placeholder="Skicka en tweet"></textarea>
+					</div>
+				</div>
+			</div>
+
+			<div id="app-messages" class="app">
+
+				<div class="app-inner">
+					<div class="contact-list"></div>
+				</div>
+			</div>
+
+			<div id="app-bank" class="app">
+
+				<div class="app-inner">
+					
+					<div class="logo">
+						<img src="img/logo.png" />
+					</div>
+					
+					<div class="button-container">
+						<img class="button" data-action="transfer" src="img/swish_button.png">
+					</div>
+				</div>
+			</div>
+
+			<div id="app-bank-transfer" class="app">
+				
+				<div class="app-inner">
+					<div class="contact-list"></div>
+				</div>
+			</div>
+
+			<div id="app-bank-transfer-menu" class="app">
+
+				<div class="app-inner">
+					
+					<div class="transfer-wrapper">
+						<div><input type="number" name="transfer-receiver" placeholder="Telefonnummer"/></div>
+						<div><input type="number" name="transfer-amount" placeholder="Belopp"/></div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="nui://game/ui/jquery.jsnui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="scripts/mustache.min.js"></script>
+
+	<script src="scripts/app.js"></script>
+	<script src="scripts/apps/home.js"></script>
+	<script src="scripts/apps/messages.js"></script>
+	<script src="scripts/apps/incoming-call.js"></script>
+	<script src="scripts/apps/contacts.js"></script>
+	<script src="scripts/apps/contact-add.js"></script>
+	<script src="scripts/apps/contact-actions.js"></script>
+	<script src="scripts/apps/contact-action-call.js"></script>
+	<script src="scripts/apps/contact-action-message.js"></script>
+	<script src="scripts/apps/bank.js"></script>
+	<script src="scripts/apps/bank-transfer.js"></script>
+	<script src="scripts/apps/bank-transfer-menu.js"></script>
+	<script src="scripts/apps/twitter.js"></script>
+
+</body>
+</html>

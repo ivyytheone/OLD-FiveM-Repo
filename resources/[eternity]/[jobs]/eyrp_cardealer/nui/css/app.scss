@@ -1,0 +1,468 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    user-select: none;
+    /* background-image: url('https://img.gta5-mods.com/q95/images/lake-louise-five-m-addon-conversion/25cc4e-FiveM_2018-06-18_16-14-32.jpg'); */
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.cardealer{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 1150px;
+    height: 750px;
+    background: #2D303C;
+    overflow-y:scroll;
+
+}
+
+.top-bar{
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background: #272A34;
+}
+
+.top-bar header{
+    font-size: 30px;
+    color: #D7D8DA;
+    font-weight: 400;
+    margin-top: 22px;
+    margin-left: 30px;
+}
+
+.top-bar-list{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: #272A34;
+    margin-top: 70px;
+}
+
+.top-bar-list ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+.top-bar-list a{
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 30px;
+    color: #bbbbc2;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+.top-bar-list a.active{
+    transition: .5s;
+    color: #29A0E3;
+    background: #30343f;
+}
+
+.pages {
+    .page{
+        visibility: hidden;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 100%;
+        height: calc(100% - 135px);
+    }
+    .page.active{
+        visibility: visible;
+        
+    }
+    .vtype-category-grid{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50px;
+        display: grid;
+        grid-template-columns: 315px 315px 315px;
+        .vtype-category-option{
+            position: relative;
+            background: #272934;
+            margin: 10px;
+            border-radius: 5px;
+            height: 135px;
+            img{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                margin: 25px;
+                max-width: 105px;
+                max-height: 60px;
+            }
+            header{
+                margin: 20px;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 300;
+            }
+        }
+    }
+    .vtype-category-option:hover{
+        background: #2a2c38;
+        transition: .5s;
+    }
+    #vehicle-category-list{
+        top: 200px;
+        
+        .search-vehicle{
+            left: 50px;
+        }
+
+        #vehicle-model-search{
+            position: absolute;
+            left: 50px;
+            top: -50px;
+            width: 220px;
+            height: 35px;
+            padding-left: 10px;
+            background: #272934;
+            border: none;
+            color: #D7D8DA;
+        }
+
+        .list-of-vehicles{
+            display: block;
+            margin-left: 40px;
+            display: grid;
+            grid-template-columns: repeat(4, 260px);
+            grid-template-rows: repeat(5, 80px);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+
+            .category-vehicle{
+                position: relative;
+             margin: 10px;
+    
+                background-color: #272934;
+                border-radius: 4px;
+                header{
+                    color: #D7D8DA;
+                    font-size: 20px;
+                    margin: 15px;
+                }
+            }
+            
+            .category-vehicle:hover{
+                background: #2a2c38;
+            transition: .5s;
+            }
+        }
+    }
+    #orders{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .order{
+            position: relative;
+            width: 90%;
+            height: 75px;
+            min-height: 75px;
+            min-width: 90%;
+            border-radius: 5px;
+            background: #262A34;
+            margin-top: 30px;
+            button{
+                position: absolute;
+                top: 50%;
+                height: 60%;
+                width: 250px;
+                right: 15px;
+                background: none;
+                color: #fff;
+                border: 1px solid #fff;
+                font-size: 23px;
+                font-weight: 300;
+                border-radius: 5px;
+                transform: translateY(-50%);
+            }
+            button:hover{
+                transition: .5s;
+                background-color: rgba(100,100,100,.1);
+            }
+            .order-section{
+                position: relative;
+                display: inline-block;
+                top: 50%;
+                transform: translateY(-50%);
+                header{
+                    position: absolute;
+                    color: #ACAEB2;
+                    font-size: 16px;
+                    top: 3px;
+                    left: 15px;
+                    
+                }
+                h1{
+                    position: absolute;
+                    color: #D7D8DA;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 20px;
+                    top: 3px;
+                    left: 15px;
+                    max-width: 150px;
+                    overflow: scroll;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                width: 200px;
+                height: 50px;
+                border-right: 1px solid #515458;
+            }
+        }
+    }
+
+    #stock{
+        
+        .stocked-vehicles {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .stock{
+                position: relative;
+                width: 90%;
+                height: 75px;
+                min-height: 75px;
+                min-width: 90%;
+                border-radius: 5px;
+                background: #262A34;
+                margin-top: 30px;
+                button{
+                    position: absolute;
+                    top: 50%;
+                    height: 60%;
+                    width: 200px;
+                    right: 15px;
+                    background: none;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    font-size: 23px;
+                    font-weight: 300;
+                    border-radius: 5px;
+                    transform: translateY(-50%);
+                }
+                button:hover{
+                    transition: .5s;
+                    background-color: rgba(100,100,100,.1);
+                }
+                .stock-section{
+                    position: relative;
+                    display: inline-block;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    header{
+                        position: absolute;
+                        color: #ACAEB2;
+                        font-size: 16px;
+                        top: 3px;
+                        left: 15px;
+                        
+                    }
+                    h1{
+                        position: absolute;
+                        color: #D7D8DA;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 20px;
+                        top: 3px;
+                        left: 15px;
+                        max-width: 150px;
+                        overflow: scroll;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    width: 200px;
+                    height: 50px;
+                    border-right: 1px solid #515458;
+                }
+            }
+        }
+        
+    }
+
+
+    #vehicle-buyer-info{
+        height: 75%;
+        width: 90%;
+        background: #272934;
+        overflow-y: scroll;
+        border-radius: 5px;
+        bottom: 25px;
+        p{
+            position: absolute;
+            width: 40%;
+            left: 55px;
+            color: #65696e;
+            bottom: 0;
+            font-weight: 400;
+        }
+        .right-section{
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            border-left: 2px solid #444444;
+            right: 0;
+            img{
+                position: absolute;
+                right: 40px;
+                top: 40px; 
+                border-radius: 5px;
+                max-height: 230px;
+                max-width: 400px;
+                min-width: 375px;
+                min-height: 200px;
+            }
+            header{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #D7D8DA;
+                font-size: 22px;
+                top: 285px;
+                font-weight: 300;
+            }
+            p{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 330px;
+                width: 400px;
+            }
+        }
+        .left-section{
+            position: absolute;
+            height: 100%;
+            left: 0;
+            width: 50%;
+            .left-section-content{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                height: 85%;
+                width: 80%;
+            }
+            header{
+                font-size: 23px;
+                color: #D7D8DA;
+                width: 100%;
+                border-bottom: 1px solid #424242;
+                padding-bottom: 15px;
+                font-weight: 400;
+            }
+            .price-details{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 99%;
+                top: 50px;
+                height: 50%;
+                font-size: 20px;
+                color: #D7D8DA;
+                font-weight: 300;
+                line-height: 30px;
+            }
+            .info-answ{
+                position: absolute;
+                right: 0;
+            }
+            #order-vehicle{
+                position: absolute;
+                bottom: 40px;
+                width: 300px;
+                height: 50px;
+                font-size: 25px;
+                background: #428CCC;
+                border: none;
+                color: #D7D8DA;
+                border-radius: 5px;
+                font-weight: 300;
+                text-transform: uppercase;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            #order-vehicle:hover{
+                transition: .5s;
+                background: #5f9fd6;
+            }
+            .verify-contract{
+                display: none;
+                position: absolute;
+                bottom: 125px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 90%;
+                height: 100px;
+                background-color: #2D303C;
+                border-radius: 5px;
+                span{
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 10px;
+                    color: #D7D8DA;
+                    font-weight: 300;
+                    font-size: 22px;
+                }
+                button{
+                    position: absolute;
+                    bottom: 0px;
+                    margin: 5px;
+                    background: #272934; 
+                    color: #D7D8DA;
+                }
+                #verify-contract{
+                    right: 0;
+                    background: #428CCC;
+                }
+                #cancel-contract{
+                    background: #cc4242;
+                }
+                #cancel-contract:hover{
+                    background: #dd5353;
+                }
+                #verify-contract:hover{
+                    background: #529cdd;
+                }
+            }
+        }
+    }
+
+}
+
+
+/* Gömma scroll baren */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}

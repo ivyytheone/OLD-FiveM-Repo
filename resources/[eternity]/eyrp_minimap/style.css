@@ -1,0 +1,52 @@
+body {
+    overflow: hidden;
+}
+.outline {
+    position: fixed;
+    bottom: 8vh;
+    left: 0.2vh;
+    /* overflow: hidden; */
+    width: 29.529vh;
+    text-align: center;
+}
+.mapborder {
+    width: 26vh;
+    height: 24.5vh;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    /* box-shadow: 0px 0px 16px rgba(0,0,0,0.5); */
+    position: relative;
+    top: 45px;
+    left: 5px;
+    display: inline-block;
+}
+.waypoint-text {
+    left: 8px;
+    width: 100%;
+    bottom: 6vh;
+    height: 2vh;
+    position: absolute;
+    display: none;
+}
+
+.waypoint-text p {
+    text-shadow: rgb(55, 71, 79) -1px 1px 0px, rgb(55, 71, 79) 1px 1px 0px, rgb(55, 71, 79) 1px -1px 0px, rgb(55, 71, 79) -1px -1px 0px;
+    width: 100%;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-variant: small-caps;
+    text-decoration: none;
+    color: white;
+    margin: unset !important;
+}
+
+.sec-hud {
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}

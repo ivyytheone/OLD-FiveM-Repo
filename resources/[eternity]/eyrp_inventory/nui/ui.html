@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/css/materialize.min.css"
+      media="screen, projection"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link href="css/Main.css" rel="stylesheet" type="text/css" />
+    <link href="css/Items.css" rel="stylesheet" type="text/css" />
+    <link href="css/Tabs.css" rel="stylesheet" type="text/css" />
+    <link href="css/Info.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="background">
+        <img
+          src="https://cdn.discordapp.com/attachments/797647971516678174/857754745384992788/logo1024.png"
+          width="400"
+          height="400"
+        />
+      </div>
+
+      <div class="inventory-bg">
+        <div class="inventory-info"></div>
+
+        <div
+          class="inventory"
+          inventory="personal"
+          style="float: left; margin-left: 70px"
+        >
+          <div class="inventory-tabs"></div>
+          <ul id="other-tabs-personal" class="dropdown-content"></ul>
+          <div class="inventory-items"></div>
+        </div>
+
+        <div
+          class="inventory"
+          inventory="other"
+          style="float: right; margin-right: 70px"
+        >
+          <div class="inventory-tabs"></div>
+          <ul id="other-tabs-other" class="dropdown-content"></ul>
+          <div class="inventory-items"></div>
+        </div>
+      </div>
+
+      <div class="personal-information"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="js/Main.js"></script>
+    <script src="js/Tabs.js"></script>
+    <script src="js/Items.js"></script>
+    <script src="js/Ground.js"></script>
+    <script src="js/Events.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  </body>
+</html>

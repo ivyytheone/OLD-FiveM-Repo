@@ -1,0 +1,80 @@
+.inventory-bg .inventory .inventory-items {
+    width: 73.9%;
+    height: 75%;
+    
+    margin: 0 auto;
+    margin-top: 5px;
+    
+    overflow-y: scroll;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: start;
+}
+
+.inventory-bg .inventory .inventory-items .item-slot {
+    width: 122px;
+    height: 122px;
+
+    background: rgba(37, 35, 35, 0.85);
+    border: 1.2px solid #2D303C;
+    border-radius: 0.6vh;
+
+    margin: 1px 1px;
+
+    overflow: hidden;
+
+    position: relative;
+    z-index: 1
+}
+
+.inventory-bg .inventory .inventory-items .item-slot .hotkey {
+    color: white;
+    font-size: 20px;
+
+    position: relative;
+    z-index: 999;
+
+    padding-left: 1px;
+}
+
+.inventory-bg .inventory .inventory-items .item-slot .item {
+    width: 100%;
+    height: 100%;
+}
+
+.inventory-bg .inventory .inventory-items .item-slot .item.hotkey {
+    position: relative;
+    z-index: 1;
+    margin-top: -30px;
+}
+
+.inventory-bg .inventory .inventory-items .item-slot .item img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.inventory-bg .inventory .inventory-items .item-slot .item p[label] {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+
+    position: relative;
+    top: -35px;
+
+    width: 100%;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+}
+
+.inventory-bg .inventory .inventory-items::-webkit-scrollbar {
+    display: none;
+}

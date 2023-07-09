@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+
+    font-family: 'Kanit', sans-serif;
+    user-select: none
+}
+
+:root {
+    --border-color: #84969e00;
+    --background-color: rgba(0, 0, 0, 0.8);
+}
+
+#app { display:none }
+
+.background {
+    background-image: url('https://i.imgur.com/QoVj7hL.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    height: 100%; width: 100%;
+    opacity: .15;
+    
+    z-index: -1
+}
+
+.background img {
+    position: absolute;
+
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: .6
+}
+
+.inventory-bg {
+    width: 100%;
+    height: 65%;
+
+    position: absolute;
+    /* top: 45%; left: 50%; */
+    /* transform: translate(-50%, -50%); */
+
+    top: 20%; left: 0%;
+    transform: scale(0.9);
+
+    z-index: 1
+}
+
+.inventory-bg .inventory {
+    width: 35%;
+    height: 100%;
+}
+
+.clone .item {
+    width: 122px;
+    height: 122px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+
+    transform: scale(0.9);
+}
+
+.clone .item img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.personal-information {
+    width: 600px; height: 70px;
+
+    position: absolute;
+    top: 17%; left: 237px;
+}
+
+.personal-information div {
+    width: 100%; height: 30px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 17px;
+    color: #eee
+}

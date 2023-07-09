@@ -1,0 +1,6 @@
+-- RegisterNetEvent("eventHandler")
+-- AddEventHandler("eventHandler", function(Event, Data)
+--     if Event == "SpawnPed" then 
+--         Stores.SpawnPed(Data)
+--     end
+-- end)

@@ -1,0 +1,39 @@
+
+
+.container .wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 75vh;
+    width: 75vh;
+}
+
+.container .wrapper img {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+button {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px
+}
+
+::-webkit-scrollbar-track {
+    background: transparent
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: transparent
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: transparent
+}

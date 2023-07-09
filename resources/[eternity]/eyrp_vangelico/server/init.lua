@@ -1,0 +1,3 @@
+MySQL.ready(function()
+
+end)

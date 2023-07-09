@@ -1,0 +1,22 @@
+"billys" - Billys Pan Pizza Original
+"cola" - Coca Cola 33cl
+"fanta" - Fanta Original 33cl
+"marabou" - Marabou Mjölkchoklad
+"nocco" - Nocco Miami 33cl
+"pizza" - Kebab Pizza
+"redbull" - Redbull 33cl
+
+"r4lle_alvedon" - Alvedon 500mg
+"r4lle_orifarm" - Orifarm 500mg
+"r4lle_kebabrulle" - Kebabrulle
+
+"ng_proc_cig" - Winston Röda Långa
+"prop_cash_pile_02" - En bunt 500lappar
+"p_ld_id_card_002" - Svenskt Idkort
+"prop_amb_phone" - Iphone 11
+"prop_barrier_work05" - Barriär Polisen
+"prop_policeid_01" - Polisbricka
+"prop_Id_health_pack" - Medkit
+"prop_boombox_01" - JBL-Boombox
+"prop_binoc_01" - Kikare
+"prop_cs_hand_radio" - Radio
